@@ -1,0 +1,19 @@
+        <app-header></app-header>
+        <div><h5>Title</h5>{{feedModel.queryTitle}}
+         <div><h5> Question</h5> {{feedModel.query}}</div>
+         <div><h6><button (click) = "userProfile(feedModel.dev.devId)">{{feedModel.dev.name}}</button></h6></div>
+        </div>
+  
+
+    <h5>Answers</h5>
+    <div class = "Answers" *ngFor = "let resp of responses">
+        {{resp.answer}}<h6><button (click) = "userProfile(resp.dev.devId)">{{resp.dev.name}}</button></h6>
+    </div>
+
+    <div class = "container">
+        <form (ngSubmit)="onSubmit(feedResponseModel.answer)">
+            <label >Your Answer </label>
+            <textarea type="text" class="form-control" id="answers"  name="AnswerName"   [(ngModel)]="feedResponseModel.answer"></textarea>
+          <button type="submit" >Submit</button>
+        </form>
+        </div>

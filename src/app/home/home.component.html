@@ -1,0 +1,18 @@
+<app-header></app-header>
+
+<div class="feedContainer">
+    <div class ="nav">
+        <div><h5>Latest questions</h5></div>
+        <button type="button" (click)="askquestion()">Ask Questions</button>
+      </div>
+    <div  class="top">
+        <ul *ngFor="let feed of feeds">
+            <h3>{{feed.queryTitle}}</h3>
+            <a href="https://www.w3schools.com/">{{feed.topic}}</a>
+            <button class = "btn" type ="submit"(click)="answer(feed.feedId)">Answer</button>
+            <ul class = "comment">Comments {{feed.totalComments}}</ul>
+            <ul>asked on {{feed.feedDate}} at {{feed.feedTime}} by <button (click)="submit(feed.dev.devId)">{{feed.dev.name}}</button></ul>
+        </ul>
+    </div>
+</div>
+<router-outlet></router-outlet>

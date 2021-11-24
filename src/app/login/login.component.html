@@ -1,0 +1,19 @@
+  <body>
+    <div class="hero">
+      <div class = "form-box">
+        <div class = "button-box">
+          <div id = "btn"></div>
+          <button type = "button" class = "toggle-btn" >Login</button>
+        </div>
+
+        <form id = "signin" class="input-group" (ngSubmit)="onSubmit()">
+          <label >Enter UserName</label>
+          <textarea type="text" class="input-field" id="queryq"  name="QueryName"   [(ngModel)]="user.userName"></textarea>
+          <label >Enter Password</label>
+          <textarea type="text" class="input-field" id="queryq"  name="QueryName"   [(ngModel)]="user.password"></textarea>
+          <button type = "submit" class = "submit-btn">Login</button> 
+          <button class = "reg" (click) = "goToSignUp()">SignUp</button>   
+        </form> 
+      </div>
+    </div> 
+  </body>

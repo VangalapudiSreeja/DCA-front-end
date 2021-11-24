@@ -1,0 +1,39 @@
+.container{
+    width: 50%;
+    margin: 150px 150px 150px 150px; 
+    border-collapse: separate;
+    background-color:darksalmon
+
+}
+button{
+    padding: 10px 15px;
+    width:30%;
+    float: right;
+}
+.form-group{
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+ .ask{
+     width: 100%;
+     margin: 50px 50px 50px 50px;
+ }
+ 
+.feed{
+    width: 80%;
+    margin: 150px 150px 150px 150px; 
+    border-collapse: separate;
+    background-color:darksalmon
+}
+.subcontainer{
+    border-collapse: separate;
+    border-spacing: 50px 10;
+    width: 100%;
+    background-color:darksalmon;
+   
+}
+th{
+    padding: 20px;
+}

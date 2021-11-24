@@ -1,0 +1,40 @@
+    <!--
+      <div>
+        <table class = "feed">
+          <thead>
+              <th>Id</th>
+              <th>Query</th>
+              <th>topic</th>
+              <th>Posted Date</th>
+              <th>Posted Time</th>
+              <th>Total Comments</th>
+              <th>Relevance</th>
+              <th>Developer</th>
+          </thead>
+          <tbody>
+              <tr *ngFor = "let feed of feeds">
+                  <td>{{feed.feedId}}</td>
+                  <td>{{feed.query}}</td>
+                  <td>{{feed.topic}}</td>
+                  <td>{{feed.feedDate}}</td>
+                  <td>{{feed.feedTime}}</td>
+                  <td>{{feed.totalComments}}</td>
+                  <td>{{feed.relevance}}</td>
+                  <td>{{feed.dev.name}}</td>
+              </tr>
+          </tbody>
+      </table>
+        </div>
+      -->
+    <div class = "subcontainer">
+      <table>
+        <tr>
+          <th><a routerLink = "/question">Questions</a></th>
+          <th><a routerLink="/topic">Topic</a></th>
+          <th><a routerLink= "/postquery">Ask question</a></th>
+        </tr>
+      </table>
+    </div>
+   
+  
+   

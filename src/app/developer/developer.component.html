@@ -1,0 +1,28 @@
+<div><h3>Profile</h3></div>
+
+
+<div><h5>UserId</h5>{{developerModel.user.userId}}</div>
+
+<div><h5>Name:</h5>{{developerModel.name}}</div>
+<div><h5>SkillLevel:</h5>{{developerModel.skillLevel}}</div>
+
+<h5>Questions posted</h5>
+<table>
+<div *ngFor = "let dev of developersFeed">
+<td><a action="http://localhost:4200/question">
+    <button class = "link" (click)=" getQuestion(dev.feedId)">{{dev.queryTitle}}</button>
+</a></td>
+<td><button (click) = "deleteFeed(dev.feedId)">Delete</button></td>
+</div>
+</table>
+
+<h5>Answers posted</h5>
+<table>
+<div *ngFor = "let resp of responses">
+<td><a action="http://localhost:4200/question">
+    <button class = "link" (click)=" getResponses(resp.feed.feedId)">{{resp.feed.queryTitle}}</button>
+</a></td>
+<td><button (click) = "deleteFeed(resp.dev.devId)">Delete</button></td>
+</div>
+</table>
+
